@@ -8,7 +8,7 @@ package com.cloudsunderneath.watchlist.data;
  *
  */
 
-public class TvShow {
+public class TvShow extends Object {
 
 	String title;
 	int episode;
@@ -75,8 +75,15 @@ public class TvShow {
 		this.season = seas;
 	}
 	
+	@Override
 	public String toString()
 	{
 		return "TvShow: "+title+" at Season: "+season+" and Episode: "+episode+"\n";
+	}
+	
+	@Override
+	public boolean equals(Object show)
+	{
+		return ((TvShow) show).getTitle() == this.title;
 	}
 }

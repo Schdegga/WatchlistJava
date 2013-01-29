@@ -17,15 +17,18 @@ public class TvShowData {
 	 */
 	public void addShow(TvShow show)
 	{
-		int index = showIndex(show.getTitle());
-		
-		if(index == -1)
+		if(!shows.contains(show))
 			shows.add(show);
 	}
 	
-	/**
-	 * 
-	 */
+	public void removeShow(String title)
+	{
+		int index = showIndex(title);
+		if (index != -1)
+			shows.remove(index);
+	}
+	
+	
 	public String toString()
 	{
 		String result = "";
@@ -36,7 +39,11 @@ public class TvShowData {
 		return result;
 	}
 	
-	
+	/**
+	 * Finds index at which a certain TvShow is located
+	 * @param title ShowTitle
+	 * @return Index of TvShow, -1 if show wasn´t found
+	 */
 	private int showIndex(String title)
 	{
 		for(int i = 0; i < shows.size(); i++)
