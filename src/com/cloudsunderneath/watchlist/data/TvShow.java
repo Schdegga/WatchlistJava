@@ -8,7 +8,7 @@ package com.cloudsunderneath.watchlist.data;
  *
  */
 
-public class TvShow extends Object {
+public class TvShow {
 
 	String title;
 	int episode;
