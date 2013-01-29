@@ -8,8 +8,10 @@ class Main {
 		TvShow test = new TvShow("Test", 4 ,4);
 		TvShow test2 = new TvShow("Test2", 3, 5);
 		TvShowData data = new TvShowData();
-		data.shows.add(test);
-		data.shows.add(test2);
+		data.addShow(test);
+		data.addShow(test2);
+		data.addShow(test2);
+		data.addShow(test);
 		System.out.println(data.toString());
 	}
 

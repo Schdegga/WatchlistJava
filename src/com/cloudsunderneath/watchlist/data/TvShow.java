@@ -38,6 +38,23 @@ public class TvShow {
 		this.season = season;
 	}
 	
+	/** 
+     * Get ShowTitle
+	 * @return String ShowTitle
+	 */
+	
+	public String getTitle() {
+		return title;
+	}
+
+	/**
+	 * Change ShowTitle
+	 * @param title ShowTitle
+	 */
+	public void setTitle(String title) {
+		this.title = title;
+	}
+
 	/**
 	 * Change EpisodeNumber
 	 * @param ep new episodeNumber
