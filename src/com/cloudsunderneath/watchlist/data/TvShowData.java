@@ -1,3 +1,4 @@
+package com.cloudsunderneath.watchlist.data;
 import java.util.ArrayList;
 
 // Vector of TvShows, holds all TvShows at runtime

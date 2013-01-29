@@ -1,5 +1,7 @@
+package com.cloudsunderneath.watchlist;
+import com.cloudsunderneath.watchlist.data.*;
 
-public class main {
+class Main {
 
 	public static void main(String[] args) {
 		TvShow test = new TvShow("Test", 4 ,4);
