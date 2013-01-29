@@ -10,7 +10,7 @@ class Main {
 		TvShowData data = new TvShowData();
 		data.shows.add(test);
 		data.shows.add(test2);
-		data.toString();
+		System.out.println(data.toString());
 	}
 
 }

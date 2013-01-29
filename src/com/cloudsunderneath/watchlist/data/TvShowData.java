@@ -16,7 +16,7 @@ public class TvShowData {
 		String result = "";
 		for(TvShow show : shows)
 		{
-			result.concat(show.toString());
+			result+=show.toString();
 			
 		}
 		return result;
