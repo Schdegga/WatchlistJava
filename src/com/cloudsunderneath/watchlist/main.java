@@ -4,8 +4,13 @@ import com.cloudsunderneath.watchlist.data.*;
 class Main {
 
 	public static void main(String[] args) {
+		
 		TvShow test = new TvShow("Test", 4 ,4);
-		System.out.println(test.toString());
+		TvShow test2 = new TvShow("Test2", 3, 5);
+		TvShowData data = new TvShowData();
+		data.shows.add(test);
+		data.shows.add(test2);
+		data.toString();
 	}
 
 }

@@ -50,6 +50,6 @@ public class TvShow {
 	
 	public String toString()
 	{
-		return "TvShow: "+title+" at Season: "+season+" and Episode: "+episode;
+		return "TvShow: "+title+" at Season: "+season+" and Episode: "+episode+"\n";
 	}
 }
