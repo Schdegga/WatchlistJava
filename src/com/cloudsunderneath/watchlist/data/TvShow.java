@@ -81,9 +81,20 @@ public class TvShow {
 		return "TvShow: "+title+" at Season: "+season+" and Episode: "+episode+"\n";
 	}
 	
+
 	@Override
-	public boolean equals(Object show)
-	{
-		return ((TvShow) show).getTitle() == this.title;
+	public boolean equals(Object obj)
+	{	
+		if (obj== null) {
+	        return false;
+	    }
+		
+	    if (getClass() != obj.getClass()) {
+	        return false;
+	    }
+	    
+	    final TvShow show = (TvShow) obj;
+	    
+		return show.getTitle().equals(this.title);
 	}
 }
