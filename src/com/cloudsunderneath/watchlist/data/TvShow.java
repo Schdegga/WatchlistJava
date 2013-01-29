@@ -1,3 +1,5 @@
+package com.cloudsunderneath.watchlist.data;
+
 
 public class TvShow {
 	String title;
