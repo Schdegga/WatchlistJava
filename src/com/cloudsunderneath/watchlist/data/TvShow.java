@@ -1,5 +1,6 @@
 package com.cloudsunderneath.watchlist.data;
 
+// Basic DataStructure holding all Information about a TvShow
 public class TvShow {
 	
 	String title;
@@ -45,5 +46,10 @@ public class TvShow {
 	public void setSeason(int seas)
 	{
 		this.season = seas;
+	}
+	
+	public String toString()
+	{
+		return "TvShow: "+title+" at Season: "+season+" and Episode: "+episode;
 	}
 }
