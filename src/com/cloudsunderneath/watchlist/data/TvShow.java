@@ -1,7 +1,7 @@
 package com.cloudsunderneath.watchlist.data;
 
-
 public class TvShow {
+	
 	String title;
 	int episode;
 	int season;
@@ -12,6 +12,13 @@ public class TvShow {
 	String Network;
 	String latestEpisode;
 	String nextEpisode;
+
+	/**
+	 * TvShowObject constructor
+	 * @param title ShowTitle
+	 * @param episode EpisodeNumber
+	 * @param season SeasonNumber
+	 */
 	
 	public TvShow(String title, int episode, int season)
 	{
@@ -20,10 +27,20 @@ public class TvShow {
 		this.season = season;
 	}
 	
+	/**
+	 * Change EpisodeNumber
+	 * @param ep new episodeNumber
+	 */
+	
 	public void setEpisode(int ep)
 	{
 		this.episode = ep;
 	}
+	
+	/**
+	 * Change SeasonNumber 
+	 * @param seas new seasonNumber
+	 */
 	
 	public void setSeason(int seas)
 	{
