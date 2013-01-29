@@ -8,7 +8,7 @@ public class TvShowData {
 	
 	public TvShowData()
 	{
-		this.shows = new ArrayList<TvShow>();
+		shows = new ArrayList<TvShow>();
 	}
 	
 	public String toString()

@@ -1,12 +1,22 @@
 package com.cloudsunderneath.watchlist.data;
 
-// Basic DataStructure holding all Information about a TvShow
+/**
+ * Basic DataStructure holding all Information about a TvShow
+ * @author Schdegga
+ * @version 1.0
+ * @since   2013-01-29   
+ *
+ */
+
 public class TvShow {
-	
+
 	String title;
 	int episode;
 	int season;
-	String DbShowName; /*eventually corrected name from TvRage-Database*/
+	/**
+	 * [unused] eventually stores the corrected name from TvRage-Database
+	 */
+	String DbShowName;
 	String Started;
 	String Status;
 	String Airtime;
